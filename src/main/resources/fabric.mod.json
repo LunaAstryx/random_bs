@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "random_bs",
+	"version": "${version}",
+	"name": "Random BS",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"LunaAstryx"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/random_bs/icon.jpeg",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lunaastryx.random_bs.RandomBS"
+		],
+		"client": [
+			"lunaastryx.random_bs.RandomBSClient"
+		],
+		"fabric-datagen": [
+			"lunaastryx.random_bs.RandomBSDataGenerator"
+		]
+	},
+	"mixins": [
+		"random_bs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
