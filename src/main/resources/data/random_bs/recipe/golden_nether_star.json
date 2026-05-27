@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "experience": 1.0,
+  "cookingtime": 600,
+  "ingredient": "minecraft:nether_star",
+  "result": {
+    "id": "random_bs:golden_nether_star"
+  }
+}

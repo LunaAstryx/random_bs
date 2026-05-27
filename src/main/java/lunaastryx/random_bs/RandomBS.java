@@ -1,5 +1,8 @@
 package lunaastryx.random_bs;
 
+import lunaastryx.random_bs.block.ModBlocks;
+import lunaastryx.random_bs.creativemodetab.ModCreativeModeTabs;
+import lunaastryx.random_bs.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,5 +15,9 @@ public class RandomBS implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		ModCreativeModeTabs.registerCreativeModeTabs();
+		ModItems.registerModItems();
+
+		ModBlocks.RegisterModBlocks();
 	}
 }
