@@ -19,6 +19,8 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
 
                         output.accept(ModItems.GOLDEN_NETHER_STAR);
+                        output.accept(ModItems.ELECTRIC_GUITAR);
+                        output.accept(ModItems.BAGUETTE);
 
                     }).build());
 
