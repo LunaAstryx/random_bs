@@ -1,5 +1,6 @@
 package lunaastryx.random_bs.item;
 
+import lunaastryx.random_bs.tags.ModTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.ToolMaterial;
@@ -13,5 +14,5 @@ public class ModToolMaterials {
     public static final ToolMaterial BAGUETTE =
             new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
                     6720, 6.7f, 7f, 19,
-                    ItemTags.VILLAGER_PICKS_UP);
+                    ModTags.Items.REPAIRS_BAGUETTE);
 }

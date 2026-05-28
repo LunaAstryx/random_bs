@@ -1,6 +1,7 @@
 package lunaastryx.random_bs.datagen;
 
 import lunaastryx.random_bs.item.ModItems;
+import lunaastryx.random_bs.tags.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
@@ -25,5 +26,8 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
         valueLookupBuilder(ItemTags.AXES)
                 .add(ModItems.ELECTRIC_GUITAR);
+
+        valueLookupBuilder(ModTags.Items.REPAIRS_BAGUETTE)
+                .add(Items.BREAD);
     }
 }
