@@ -20,7 +20,7 @@ public class ModItems {
 
     public static final Item ELECTRIC_GUITAR = registerItem("electric_guitar",
             Item::new, new Item.Properties().fireResistant()
-                    .sword(ModToolMaterials.ELECTRIC_GUITAR_TOOL_MATERIAL,
+                    .axe(ModToolMaterials.ELECTRIC_GUITAR_TOOL_MATERIAL,
                             0f, -2.67f));
 
     public static final Item BAGUETTE = registerItem("baguette",
