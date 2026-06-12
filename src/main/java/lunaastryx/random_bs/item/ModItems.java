@@ -25,8 +25,9 @@ public class ModItems {
 
     public static final Item STAFF_OF_HOMA = registerItem("staff_of_homa",
             Item::new, new Item.Properties().fireResistant().spear(ModToolMaterials.STAFF_OF_HOMA,
-                    1f, 1f, 1f, 1f, 1f,
-                    1f, 1f, 1f, 1f));
+                    1.3F, 1.5F, 0.3F, 3F, 9.0F,
+                    5.5F, 5.1F, 9F, 4.6F)
+    );
 
     public static final Item BAGUETTE = registerItem("baguette",
             Item::new, new Item.Properties().fireResistant()
