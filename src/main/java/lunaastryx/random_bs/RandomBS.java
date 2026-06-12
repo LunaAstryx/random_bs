@@ -1,7 +1,7 @@
 package lunaastryx.random_bs;
 
 import lunaastryx.random_bs.block.ModBlocks;
-import lunaastryx.random_bs.creativemodetab.ModCreativeModeTabs;
+import lunaastryx.random_bs.item.ModCreativeModeTabs;
 import lunaastryx.random_bs.item.ModItems;
 import lunaastryx.random_bs.tags.ModTags;
 import net.fabricmc.api.ModInitializer;

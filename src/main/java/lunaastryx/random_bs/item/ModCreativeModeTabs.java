@@ -1,7 +1,6 @@
-package lunaastryx.random_bs.creativemodetab;
+package lunaastryx.random_bs.item;
 
 import lunaastryx.random_bs.RandomBS;
-import lunaastryx.random_bs.item.ModItems;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -21,6 +20,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.GOLDEN_NETHER_STAR);
                         output.accept(ModItems.ELECTRIC_GUITAR);
                         output.accept(ModItems.BAGUETTE);
+                        output.accept(ModItems.STAFF_OF_HOMA);
 
                     }).build());
 

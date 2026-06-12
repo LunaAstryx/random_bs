@@ -27,7 +27,13 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
         valueLookupBuilder(ItemTags.AXES)
                 .add(ModItems.ELECTRIC_GUITAR);
 
+        valueLookupBuilder(ItemTags.SPEARS)
+                .add(ModItems.STAFF_OF_HOMA);
+
         valueLookupBuilder(ModTags.Items.REPAIRS_BAGUETTE)
                 .add(Items.BREAD);
+
+        valueLookupBuilder(ModTags.Items.REPAIRS_STAFF_OF_HOMA)
+                .add(Items.REDSTONE);
     }
 }

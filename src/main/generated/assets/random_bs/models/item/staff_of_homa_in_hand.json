@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/spear_in_hand",
+  "textures": {
+    "layer0": "random_bs:item/staff_of_homa_in_hand"
+  }
+}

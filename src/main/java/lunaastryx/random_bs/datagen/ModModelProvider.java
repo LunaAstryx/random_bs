@@ -24,5 +24,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerators.generateFlatItem(ModItems.ELECTRIC_GUITAR, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.BAGUETTE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateSpear(ModItems.STAFF_OF_HOMA);
     }
 }

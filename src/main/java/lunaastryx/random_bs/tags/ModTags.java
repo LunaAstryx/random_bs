@@ -21,6 +21,8 @@ public class ModTags {
 
         public static final TagKey<Item> REPAIRS_BAGUETTE = createTag("repairs_baguette");
 
+        public static final TagKey<Item> REPAIRS_STAFF_OF_HOMA = createTag("repairs_staff_of_homa");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.create(Registries.ITEM,
                     Identifier.fromNamespaceAndPath(RandomBS.MOD_ID, name));

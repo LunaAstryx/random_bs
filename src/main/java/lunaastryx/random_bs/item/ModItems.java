@@ -23,6 +23,11 @@ public class ModItems {
                     .axe(ModToolMaterials.ELECTRIC_GUITAR_TOOL_MATERIAL,
                             0f, -2.67f));
 
+    public static final Item STAFF_OF_HOMA = registerItem("staff_of_homa",
+            Item::new, new Item.Properties().fireResistant().spear(ModToolMaterials.STAFF_OF_HOMA,
+                    1f, 1f, 1f, 1f, 1f,
+                    1f, 1f, 1f, 1f));
+
     public static final Item BAGUETTE = registerItem("baguette",
             Item::new, new Item.Properties().fireResistant()
                     .sword(ModToolMaterials.BAGUETTE, 0, -2.4f));

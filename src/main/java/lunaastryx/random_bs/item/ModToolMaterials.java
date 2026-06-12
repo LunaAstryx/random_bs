@@ -15,4 +15,9 @@ public class ModToolMaterials {
             new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
                     6720, 6.7f, 7f, 19,
                     ModTags.Items.REPAIRS_BAGUETTE);
+
+    public static final ToolMaterial STAFF_OF_HOMA =
+            new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL,
+                    5673, 4f, 5f, 34,
+                    ModTags.Items.REPAIRS_STAFF_OF_HOMA);
 }
