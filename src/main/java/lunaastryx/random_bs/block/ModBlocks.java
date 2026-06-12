@@ -6,16 +6,30 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.PushReaction;
 
 import java.util.function.Function;
 
 public class ModBlocks {
 
+    public static final Block PURPLE_TULIP = registerBlock("purple_tulip",
+            properties -> new FlowerBlock(MobEffects.RESISTANCE, 7f , properties.noCollision()
+                    .sound(SoundType.GRASS).instabreak().offsetType(BlockBehaviour.OffsetType.XZ)
+                    .pushReaction(PushReaction.DESTROY)));
+    public static final Block POTTED_PURPLE_TULIP = registerBlock("potted_purple_tulip",
+            p -> new FlowerPotBlock(PURPLE_TULIP, p));
 
+    public static final Block YELLOW_TULIP = registerBlock("yellow_tulip",
+            properties -> new FlowerBlock(MobEffects.HASTE, 6f , properties.noCollision()
+                    .sound(SoundType.GRASS).instabreak().offsetType(BlockBehaviour.OffsetType.XZ)
+                    .pushReaction(PushReaction.DESTROY)));
+    public static final Block POTTED_YELLOW_TULIP = registerBlock("potted_yellow_tulip",
+            p -> new FlowerPotBlock(YELLOW_TULIP, p));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of()

@@ -1,5 +1,6 @@
 package lunaastryx.random_bs.datagen;
 
+import lunaastryx.random_bs.block.ModBlocks;
 import lunaastryx.random_bs.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -14,6 +15,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
+        blockModelGenerators.createPlant(ModBlocks.PURPLE_TULIP, ModBlocks.POTTED_PURPLE_TULIP, BlockModelGenerators.PlantType.NOT_TINTED);
+        blockModelGenerators.createPlant(ModBlocks.YELLOW_TULIP, ModBlocks.POTTED_YELLOW_TULIP, BlockModelGenerators.PlantType.NOT_TINTED);
 
     }
 

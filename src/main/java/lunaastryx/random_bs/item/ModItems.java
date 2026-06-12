@@ -24,15 +24,24 @@ public class ModItems {
                             0f, -2.67f));
 
     public static final Item STAFF_OF_HOMA = registerItem("staff_of_homa",
-            Item::new, new Item.Properties().fireResistant().spear(ModToolMaterials.STAFF_OF_HOMA,
+            Item::new,new Item.Properties().fireResistant().spear(ModToolMaterials.STAFF_OF_HOMA,
                     1.3F, 1.5F, 0.3F, 3F, 9.0F,
-                    5.5F, 5.1F, 9F, 4.6F)
-    );
+                    5.5F, 5.1F, 9F, 4.6F));
 
     public static final Item BAGUETTE = registerItem("baguette",
             Item::new, new Item.Properties().fireResistant()
                     .sword(ModToolMaterials.BAGUETTE, 0, -2.4f));
 
+    /*public static final Item LACE = registerItem("lace",
+            MaceItem::new, new Item.Properties()
+                    .rarity(Rarity.EPIC)
+                    .durability(6769)
+                    .component(DataComponents.TOOL, MaceItem.createToolProperties())
+                    .repairable(ModItems.GOLDEN_NETHER_STAR)
+                    .attributes(MaceItem.createAttributes())
+                    .enchantable(24)
+                    .component(DataComponents.WEAPON, new Weapon(1)));
+*/
     public static <T extends Item> T registerItem(String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
         // Create the item key.
         ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM,

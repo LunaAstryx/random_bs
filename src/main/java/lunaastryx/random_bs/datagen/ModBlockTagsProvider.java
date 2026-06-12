@@ -1,5 +1,6 @@
 package lunaastryx.random_bs.datagen;
 
+import lunaastryx.random_bs.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
@@ -32,5 +33,13 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(Blocks.WAXED_OXIDIZED_COPPER)
                 .add(Blocks.OXIDIZED_CUT_COPPER)
                 .add(Blocks.WAXED_OXIDIZED_CUT_COPPER);
+
+        valueLookupBuilder(BlockTags.FLOWERS)
+                .add(ModBlocks.YELLOW_TULIP)
+                .add(ModBlocks.PURPLE_TULIP);
+
+        valueLookupBuilder(BlockTags.SMALL_FLOWERS)
+                .add(ModBlocks.YELLOW_TULIP)
+                .add(ModBlocks.PURPLE_TULIP);
     }
 }
