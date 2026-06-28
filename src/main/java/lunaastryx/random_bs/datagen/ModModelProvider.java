@@ -25,8 +25,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.GOLDEN_NETHER_STAR, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.PUFFER_ARMOR_TRIM, ModelTemplates.FLAT_ITEM);
 
-        itemModelGenerators.generateFlatItem(ModItems.ELECTRIC_GUITAR, ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModelGenerators.generateFlatItem(ModItems.BAGUETTE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.declareCustomModelItem(ModItems.ELECTRIC_GUITAR);
+        itemModelGenerators.declareCustomModelItem(ModItems.BAGUETTE);
         itemModelGenerators.generateSpear(ModItems.STAFF_OF_HOMA);
     }
 }

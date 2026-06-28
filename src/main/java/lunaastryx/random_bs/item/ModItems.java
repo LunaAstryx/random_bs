@@ -7,6 +7,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.MaceItem;
 
 import java.util.function.Function;
 
@@ -34,12 +35,10 @@ public class ModItems {
 
     /*public static final Item LACE = registerItem("lace",
             MaceItem::new, new Item.Properties()
-                    .rarity(Rarity.EPIC)
-                    .durability(6769)
+                    .rarity(Rarity.EPIC).durability(6769).fireproof()
                     .component(DataComponents.TOOL, MaceItem.createToolProperties())
                     .repairable(ModItems.GOLDEN_NETHER_STAR)
-                    .attributes(MaceItem.createAttributes())
-                    .enchantable(24)
+                    .attributes(MaceItem.createAttributes()).enchantable(24)
                     .component(DataComponents.WEAPON, new Weapon(1)));
 */
     public static <T extends Item> T registerItem(String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
