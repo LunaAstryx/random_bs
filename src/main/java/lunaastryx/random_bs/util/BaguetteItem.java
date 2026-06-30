@@ -10,11 +10,11 @@ public class BaguetteItem extends Item {
         super(properties);
     }
 
-    /*@Override
-    public void hurtEnemy(ItemStack itemStack, LivingEntity mob, LivingEntity attacker) {
+        @Override
+        public void hurtEnemy(ItemStack itemStack, LivingEntity mob, LivingEntity attacker) {
 
-        hurtEnemy(ModItems.BAGUETTE, mob, attacker.getLastHurtByPlayer());
+            hurtEnemy(ModItems.BAGUETTE.getDefaultInstance(), mob, attacker.getLastHurtByPlayer());
 
-        super.hurtEnemy(itemStack, mob, attacker);
-    }*/
+            super.hurtEnemy(itemStack, mob, attacker);
+        }
 }

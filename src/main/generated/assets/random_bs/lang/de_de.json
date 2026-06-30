@@ -7,5 +7,6 @@
   "item.random_bs.golden_nether_star": "Goldener Nether Stern",
   "item.random_bs.puffer_armor_trim_smithing_template": "Kugelfisch-Rüstungbesatz",
   "item.random_bs.staff_of_homa": "Homa-Stab",
-  "itemTooltip.random_bs.puffer_trim.tooltip": "Schmiedevorlage"
+  "itemTooltip.random_bs.puffer_trim.tooltip": "Schmiedevorlage",
+  "sound.random_bs.yummy": "Baguette Hieb"
 }

@@ -7,5 +7,6 @@
   "item.random_bs.golden_nether_star": "Golden Nether Star",
   "item.random_bs.puffer_armor_trim_smithing_template": "Puffer Armor Trim",
   "item.random_bs.staff_of_homa": "Staff of Homer",
-  "itemTooltip.random_bs.puffer_trim.tooltip": "Smithing Template"
+  "itemTooltip.random_bs.puffer_trim.tooltip": "Smithing Template",
+  "sound.random_bs.yummy": "Baguette Hit"
 }

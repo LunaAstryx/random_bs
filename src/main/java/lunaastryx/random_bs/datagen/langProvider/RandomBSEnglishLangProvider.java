@@ -23,6 +23,8 @@ public class RandomBSEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.random_bs.electric_guitar", "Electric Guitar");
         translationBuilder.add("item.random_bs.baguette", "Baguette");
 
+        translationBuilder.add("sound.random_bs.yummy", "Baguette Hit");
+
         translationBuilder.add("block.random_bs.yellow_tulip", "Yellow Tulip");
         translationBuilder.add("block.random_bs.purple_tulip", "Purple Tulip");
 

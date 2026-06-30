@@ -1,6 +1,7 @@
 package lunaastryx.random_bs.item;
 
 import lunaastryx.random_bs.RandomBS;
+import lunaastryx.random_bs.util.BaguetteItem;
 import lunaastryx.random_bs.util.PufferTemplateItem;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
@@ -35,7 +36,7 @@ public class ModItems {
                     5.5F, 5.1F, 9F, 4.6F));
 
     public static final Item BAGUETTE = registerItem("baguette",
-            Item::new, new Item.Properties().fireResistant()
+            BaguetteItem::new, new Item.Properties().fireResistant()
                     .sword(ModToolMaterials.BAGUETTE, 0, -2.4f));
 
     /*public static final Item LACE = registerItem("lace",
