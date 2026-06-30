@@ -1,9 +1,6 @@
 package lunaastryx.random_bs;
 
-import lunaastryx.random_bs.datagen.ModBlockTagsProvider;
-import lunaastryx.random_bs.datagen.ModItemTagsProvider;
-import lunaastryx.random_bs.datagen.ModLootTableProvider;
-import lunaastryx.random_bs.datagen.ModModelProvider;
+import lunaastryx.random_bs.datagen.*;
 import lunaastryx.random_bs.datagen.langProvider.RandomBSEnglishLangProvider;
 import lunaastryx.random_bs.datagen.langProvider.RandomBSGermanLangProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -18,6 +15,7 @@ public class RandomBSDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemTagsProvider::new);
 		pack.addProvider(ModBlockTagsProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
 
 		pack.addProvider(RandomBSEnglishLangProvider::new);
 		pack.addProvider(RandomBSGermanLangProvider::new);
