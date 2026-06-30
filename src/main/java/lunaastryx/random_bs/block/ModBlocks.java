@@ -1,6 +1,7 @@
 package lunaastryx.random_bs.block;
 
 import lunaastryx.random_bs.RandomBS;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -8,6 +9,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -49,5 +51,10 @@ public class ModBlocks {
 
     public static void RegisterModBlocks() {
         RandomBS.LOGGER.info("Registering Blocks for " + RandomBS.MOD_ID);
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
+            output.accept(ModBlocks.YELLOW_TULIP);
+            output.accept(ModBlocks.PURPLE_TULIP);
+        });
     }
 }

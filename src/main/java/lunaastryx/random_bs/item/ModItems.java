@@ -1,16 +1,16 @@
 package lunaastryx.random_bs.item;
 
 import lunaastryx.random_bs.RandomBS;
+import lunaastryx.random_bs.util.PufferTemplateItem;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.MaceItem;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.SmithingTemplateItem;
+import net.minecraft.world.item.*;
 
+import java.awt.*;
 import java.util.function.Function;
 
 public class ModItems {
@@ -19,7 +19,10 @@ public class ModItems {
             Item::new, new Item.Properties().fireResistant());
 
     public static final Item PUFFER_ARMOR_TRIM = registerItem("puffer_armor_trim_smithing_template",
-            Item::new, new Item.Properties().rarity(Rarity.UNCOMMON));
+            PufferTemplateItem::new, new Item.Properties().rarity(Rarity.UNCOMMON));
+
+    //public static final Item PUFFER_ARMOR_TRIM = registerItem("puffer_armor_trim_smithing_template",
+    //        SmithingTemplateItem::createArmorTrimTemplate, new Item.Properties().rarity(Rarity.UNCOMMON));
 
     public static final Item ELECTRIC_GUITAR = registerItem("electric_guitar",
             Item::new, new Item.Properties().fireResistant()
@@ -43,7 +46,7 @@ public class ModItems {
                     .attributes(MaceItem.createAttributes()).enchantable(24)
                     .component(DataComponents.WEAPON, new Weapon(1)));
 */
-    public static <T extends Item> T registerItem(String name, Function<Item.Properties, T> itemFactory, Item.Properties settings) {
+    public static <T extends Item> T registerItem(String name, Function<Item.Properties, T> itemFactory, Item.Properties settings, Component... tooltip) {
         // Create the item key.
         ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM,
                 Identifier.fromNamespaceAndPath(RandomBS.MOD_ID, name));
@@ -58,5 +61,16 @@ public class ModItems {
     }
     public static void registerModItems() {
         RandomBS.LOGGER.info("Registering Mod Items for" + RandomBS.MOD_ID);
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
+            output.accept(ModItems.GOLDEN_NETHER_STAR);
+            output.accept(ModItems.PUFFER_ARMOR_TRIM);
+        });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(output -> {
+            output.accept(ModItems.BAGUETTE);
+            output.accept(ModItems.ELECTRIC_GUITAR);
+            output.accept(ModItems.STAFF_OF_HOMA);
+        });
     }
 }
