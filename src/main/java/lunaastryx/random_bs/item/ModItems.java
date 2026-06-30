@@ -8,6 +8,8 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.MaceItem;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.SmithingTemplateItem;
 
 import java.util.function.Function;
 
@@ -17,7 +19,7 @@ public class ModItems {
             Item::new, new Item.Properties().fireResistant());
 
     public static final Item PUFFER_ARMOR_TRIM = registerItem("puffer_armor_trim_smithing_template",
-            Item::new, new Item.Properties());
+            Item::new, new Item.Properties().rarity(Rarity.UNCOMMON));
 
     public static final Item ELECTRIC_GUITAR = registerItem("electric_guitar",
             Item::new, new Item.Properties().fireResistant()
