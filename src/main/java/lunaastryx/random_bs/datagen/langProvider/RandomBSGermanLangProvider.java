@@ -27,6 +27,9 @@ public class RandomBSGermanLangProvider extends FabricLanguageProvider {
         translationBuilder.add("block.random_bs.yellow_tulip", "Gelbe Tulpe");
         translationBuilder.add("block.random_bs.purple_tulip", "Lila Tulpe");
 
+        translationBuilder.add("painting.random_bs.victory.title", "Sieg");
+        translationBuilder.add("painting.random_bs.victory.author", "duh");
+
         translationBuilder.add("creativetab.random_bs", "Zufälliger Krimkram");
     }
 }

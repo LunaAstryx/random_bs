@@ -1,0 +1,13 @@
+{
+  "asset_id": "random_bs:victory",
+  "author": {
+    "color": "gray",
+    "translate": "painting.random_bs.victory.author"
+  },
+  "height": 3,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.random_bs.victory.title"
+  },
+  "width": 4
+}

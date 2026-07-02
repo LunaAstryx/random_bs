@@ -8,5 +8,7 @@
   "item.random_bs.puffer_armor_trim_smithing_template": "Kugelfisch-Rüstungbesatz",
   "item.random_bs.staff_of_homa": "Homa-Stab",
   "itemTooltip.random_bs.puffer_trim.tooltip": "Schmiedevorlage",
+  "painting.random_bs.victory.author": "duh",
+  "painting.random_bs.victory.title": "Sieg",
   "sound.random_bs.yummy": "Baguette Hieb"
 }
