@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "random_bs:item/pommes_rot_weiss_music_disc"
+  }
+}

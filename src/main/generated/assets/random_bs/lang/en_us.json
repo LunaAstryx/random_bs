@@ -5,9 +5,11 @@
   "item.random_bs.baguette": "Baguette",
   "item.random_bs.electric_guitar": "Electric Guitar",
   "item.random_bs.golden_nether_star": "Golden Nether Star",
+  "item.random_bs.pommes_rot_weiss_music_disc": "Goofy Music Disc",
   "item.random_bs.puffer_armor_trim_smithing_template": "Puffer Armor Trim",
   "item.random_bs.staff_of_homa": "Staff of Homer",
   "itemTooltip.random_bs.puffer_trim.tooltip": "Smithing Template",
+  "jukebox_song.random_bs.pommes_rot_weiss": "Pommes Rot Weiss - @tacokaiser",
   "painting.random_bs.victory.author": "duh",
   "painting.random_bs.victory.title": "Victory",
   "sound.random_bs.yummy": "Baguette Hit"

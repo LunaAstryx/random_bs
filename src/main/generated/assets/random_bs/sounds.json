@@ -1,0 +1,23 @@
+{
+  "nomnomnom": {
+    "sounds": [
+      "random_bs:nomnomnom"
+    ],
+    "subtitle": "subtitles.random_bs.nomnomnom"
+  },
+  "pommes_rot_weiss": {
+    "sounds": [
+      {
+        "name": "random_bs:pommes_rot_weiss",
+        "stream": true
+      }
+    ],
+    "subtitle": "subtitles.random_bs.pommes_rot_weiss"
+  },
+  "yummy": {
+    "sounds": [
+      "random_bs:yummy"
+    ],
+    "subtitle": "subtitles.random_bs.yummy"
+  }
+}

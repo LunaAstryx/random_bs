@@ -1,4 +1,4 @@
-package lunaastryx.random_bs.datagen.painting;
+package lunaastryx.random_bs.datagen.misc.painting;
 
 import lunaastryx.random_bs.RandomBS;
 import net.minecraft.ChatFormatting;

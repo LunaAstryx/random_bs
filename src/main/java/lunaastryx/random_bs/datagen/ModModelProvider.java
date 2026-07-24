@@ -24,6 +24,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
         itemModelGenerators.generateFlatItem(ModItems.GOLDEN_NETHER_STAR, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.PUFFER_ARMOR_TRIM, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.POMMES_ROT_WEISS_DISC, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerators.declareCustomModelItem(ModItems.ELECTRIC_GUITAR);
         itemModelGenerators.declareCustomModelItem(ModItems.BAGUETTE);

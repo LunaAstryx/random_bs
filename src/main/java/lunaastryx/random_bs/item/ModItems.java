@@ -1,6 +1,8 @@
 package lunaastryx.random_bs.item;
 
 import lunaastryx.random_bs.RandomBS;
+import lunaastryx.random_bs.datagen.misc.musicDisc.ModJukeBoxSong;
+import lunaastryx.random_bs.sounds.ModSounds;
 import lunaastryx.random_bs.util.BaguetteItem;
 import lunaastryx.random_bs.util.PufferTemplateItem;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
@@ -18,6 +20,9 @@ public class ModItems {
 
     public static final Item GOLDEN_NETHER_STAR = registerItem("golden_nether_star",
             Item::new, new Item.Properties().fireResistant());
+
+    public static final Item POMMES_ROT_WEISS_DISC = registerItem("pommes_rot_weiss_music_disc",
+            Item::new, new Item.Properties().jukeboxPlayable(ModJukeBoxSong.POMMES_ROT_WEISS_KEY).stacksTo(1));
 
     public static final Item PUFFER_ARMOR_TRIM = registerItem("puffer_armor_trim_smithing_template",
             PufferTemplateItem::new, new Item.Properties().rarity(Rarity.UNCOMMON));

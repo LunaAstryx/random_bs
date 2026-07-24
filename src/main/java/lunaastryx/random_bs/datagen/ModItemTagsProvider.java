@@ -35,5 +35,8 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
         valueLookupBuilder(ModTags.Items.REPAIRS_STAFF_OF_HOMA)
                 .add(Items.REDSTONE);
+
+        valueLookupBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS)
+                .add(ModItems.POMMES_ROT_WEISS_DISC);
     }
 }
