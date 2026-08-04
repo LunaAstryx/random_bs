@@ -16,6 +16,7 @@ public class ModRegistryDataGenerator extends FabricDynamicRegistryProvider {
     protected void configure(HolderLookup.Provider registries, Entries entries) {
         entries.addAll(registries.lookupOrThrow(Registries.PAINTING_VARIANT));
         entries.addAll(registries.lookupOrThrow(Registries.JUKEBOX_SONG));
+        entries.addAll(registries.lookupOrThrow(Registries.VILLAGER_TRADE));
     }
 
     @Override
