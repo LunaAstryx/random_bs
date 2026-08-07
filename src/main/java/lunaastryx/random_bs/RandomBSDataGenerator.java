@@ -7,6 +7,8 @@ import lunaastryx.random_bs.datagen.misc.musicDisc.ModJukeBoxSong;
 import lunaastryx.random_bs.datagen.misc.musicDisc.ModSoundsProvider;
 import lunaastryx.random_bs.datagen.misc.painting.ModPaintingTagsProvider;
 import lunaastryx.random_bs.datagen.misc.painting.ModPaintings;
+import lunaastryx.random_bs.datagen.misc.villager.ModPoiTags;
+import lunaastryx.random_bs.datagen.misc.villager.ModTradeSets;
 import lunaastryx.random_bs.datagen.misc.villager.ModVillagerTradeTags;
 import lunaastryx.random_bs.datagen.misc.villager.ModVillagerTrades;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -28,6 +30,7 @@ public class RandomBSDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModPaintingTagsProvider::new);
 		pack.addProvider(ModSoundsProvider::new);
 		pack.addProvider(ModVillagerTradeTags::new);
+		pack.addProvider(ModPoiTags::new);
 
 		pack.addProvider(RandomBSEnglishLangProvider::new);
 		pack.addProvider(RandomBSGermanLangProvider::new);
@@ -38,6 +41,6 @@ public class RandomBSDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.add(Registries.PAINTING_VARIANT,  ModPaintings::bootstrap);
 		registryBuilder.add(Registries.JUKEBOX_SONG, ModJukeBoxSong::bootstrap);
 		registryBuilder.add(Registries.VILLAGER_TRADE, ModVillagerTrades::bootstrap);
-
+		registryBuilder.add(Registries.TRADE_SET, ModTradeSets::bootstrap);
 	}
 }

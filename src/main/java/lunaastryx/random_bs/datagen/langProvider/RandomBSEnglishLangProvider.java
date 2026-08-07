@@ -31,6 +31,9 @@ public class RandomBSEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("painting.random_bs.victory.title", "Victory");
         translationBuilder.add("painting.random_bs.victory.author", "duh");
 
+        translationBuilder.add("entity.minecraft.villager.random_bs.guy", "Guy");
+        translationBuilder.add("entity.minecraft.villager.random_bs.florist", "Florist Guy");
+
         translationBuilder.add("item.random_bs.pommes_rot_weiss_music_disc", "Goofy Music Disc");
         translationBuilder.add("jukebox_song.random_bs.pommes_rot_weiss", "Pommes Rot Weiss - @tacokaiser");
 

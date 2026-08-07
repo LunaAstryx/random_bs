@@ -5,6 +5,7 @@ import lunaastryx.random_bs.item.ModCreativeModeTabs;
 import lunaastryx.random_bs.item.ModItems;
 import lunaastryx.random_bs.sounds.ModSounds;
 import lunaastryx.random_bs.tags.ModTags;
+import lunaastryx.random_bs.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -25,5 +26,6 @@ public class RandomBS implements ModInitializer {
 		ModTags.registerModTags();
 
 		ModSounds.registerModSounds();
+		ModVillagers.registerModVillagers();
 	}
 }

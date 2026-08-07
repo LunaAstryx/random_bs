@@ -1,0 +1,13 @@
+{
+  "gives": {
+    "count": 8,
+    "id": "random_bs:yellow_tulip"
+  },
+  "max_uses": 5.0,
+  "reputation_discount": 0.075,
+  "wants": {
+    "count": 2.0,
+    "id": "minecraft:emerald"
+  },
+  "xp": 3.0
+}

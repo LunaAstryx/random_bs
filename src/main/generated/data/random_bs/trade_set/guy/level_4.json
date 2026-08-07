@@ -1,0 +1,5 @@
+{
+  "amount": 2.0,
+  "random_sequence": "random_bs:trade_set/guy/level_4",
+  "trades": "#random_bs:guy/level_4"
+}

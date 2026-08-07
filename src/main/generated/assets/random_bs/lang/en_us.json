@@ -2,6 +2,8 @@
   "block.random_bs.purple_tulip": "Purple Tulip",
   "block.random_bs.yellow_tulip": "Yellow Tulip",
   "creativetab.random_bs": "Random BS",
+  "entity.minecraft.villager.random_bs.florist": "Florist Guy",
+  "entity.minecraft.villager.random_bs.guy": "Guy",
   "item.random_bs.baguette": "Baguette",
   "item.random_bs.electric_guitar": "Electric Guitar",
   "item.random_bs.golden_nether_star": "Golden Nether Star",

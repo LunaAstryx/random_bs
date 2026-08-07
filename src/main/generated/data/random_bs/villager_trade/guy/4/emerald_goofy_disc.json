@@ -1,0 +1,12 @@
+{
+  "gives": {
+    "id": "random_bs:pommes_rot_weiss_music_disc"
+  },
+  "max_uses": 1.0,
+  "reputation_discount": 0.075,
+  "wants": {
+    "count": 67.0,
+    "id": "minecraft:emerald"
+  },
+  "xp": 67.0
+}

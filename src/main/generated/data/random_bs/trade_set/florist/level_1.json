@@ -1,0 +1,5 @@
+{
+  "amount": 2.0,
+  "random_sequence": "random_bs:trade_set/florist/level_1",
+  "trades": "#random_bs:florist/level_1"
+}
