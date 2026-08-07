@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smithing_trim",
+  "addition": "#minecraft:trim_materials",
+  "base": "#minecraft:trimmable_armor",
+  "pattern": "random_bs:puffer",
+  "template": "random_bs:puffer_armor_trim_smithing_template"
+}

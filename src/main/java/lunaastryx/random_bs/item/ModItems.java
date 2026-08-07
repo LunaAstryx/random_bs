@@ -12,6 +12,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.equipment.trim.TrimMaterial;
 
 import java.awt.*;
 import java.util.function.Function;
@@ -25,10 +26,7 @@ public class ModItems {
             Item::new, new Item.Properties().jukeboxPlayable(ModJukeBoxSong.POMMES_ROT_WEISS_KEY).stacksTo(1));
 
     public static final Item PUFFER_ARMOR_TRIM = registerItem("puffer_armor_trim_smithing_template",
-            PufferTemplateItem::new, new Item.Properties().rarity(Rarity.UNCOMMON));
-
-    //public static final Item PUFFER_ARMOR_TRIM = registerItem("puffer_armor_trim_smithing_template",
-    //        SmithingTemplateItem::createArmorTrimTemplate, new Item.Properties().rarity(Rarity.UNCOMMON));
+            SmithingTemplateItem::createArmorTrimTemplate, new Item.Properties().rarity(Rarity.UNCOMMON));
 
     public static final Item ELECTRIC_GUITAR = registerItem("electric_guitar",
             Item::new, new Item.Properties().fireResistant()

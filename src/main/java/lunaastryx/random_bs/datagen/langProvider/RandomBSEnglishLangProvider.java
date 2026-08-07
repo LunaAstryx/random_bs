@@ -18,6 +18,7 @@ public class RandomBSEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.random_bs.golden_nether_star", "Golden Nether Star");
         translationBuilder.add("item.random_bs.puffer_armor_trim_smithing_template","Puffer Armor Trim");
         translationBuilder.add("itemTooltip.random_bs.puffer_trim.tooltip", "Smithing Template");
+        translationBuilder.add("trim_pattern.random_bs.puffer", "Puffer Armor Trim");
 
         translationBuilder.add("item.random_bs.staff_of_homa", "Staff of Homer");
         translationBuilder.add("item.random_bs.electric_guitar", "Electric Guitar");
