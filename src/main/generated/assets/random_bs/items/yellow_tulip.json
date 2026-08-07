@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "random_bs:block/yellow_tulip"
+    "model": "random_bs:item/yellow_tulip"
   }
 }
